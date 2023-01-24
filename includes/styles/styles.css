@@ -19,6 +19,18 @@ img {
 
 /* Custom HTML for classes and ids below */
 
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
 .container {
     padding-top: 50px;
     padding-bottom: 50px;
