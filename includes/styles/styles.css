@@ -31,7 +31,12 @@ img {
     text-align: center !important;
 }
 
-.container {
-    padding-top: 50px;
+.page-hero, .page-section {
+     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.container {
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
 }

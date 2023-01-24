@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 5 -->
+    <!-- Bootstrap 4 -->
     <!-- Latest minified CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Bootstrap Packaged JS (Bundle) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
     <!-- jQuery -->
@@ -30,7 +36,50 @@
 
 <body>
     <div id="page">
-        <section id="hero-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="includes/images/logo.png" width="200">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarColor03" bis_skin_checked="1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                    aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Separated link</a>
+                                </div>
+                            </li>
+                </ul>
+                <form class="form-inline mb-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </div>
+            </div>
+          </nav>
+        
+        <section id="hero-section" class="page-hero">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
@@ -52,15 +101,15 @@
                 </div>
             </div>
         </section>
-        <section id="about-us-section" class="page-section">
+        <section id="about-us-section" class="page-section bg-dark">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2>Section title</h1>
-                            <h3>
+                        <h2 class="text-light">Section title</h1>
+                            <h3 class="text-light">
                                 Section subtitle
                             </h3>
-                            <p>
+                            <p class="text-light">
                                 This is a section description
                             </p>
                     </div>
@@ -82,13 +131,15 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="first_name">First Name</label>
-                                                <input type="text" class="form-control" name="first_name" placeholder="First Name" id="first_name" />
+                                                <input type="text" class="form-control" name="first_name"
+                                                    placeholder="First Name" id="first_name" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="last_name">Last Name</label>
-                                                <input type="text" class="form-control" name="last_name" placeholder="Last Name" id="last_name" />
+                                                <input type="text" class="form-control" name="last_name"
+                                                    placeholder="Last Name" id="last_name" />
                                             </div>
                                         </div>
                                     </div>
@@ -96,13 +147,15 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="email">Email</label>
-                                                <input type="email" class="form-control" name="email" placeholder="Email" id="email" />
+                                                <input type="email" class="form-control" name="email"
+                                                    placeholder="Email" id="email" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="phone">Phone</label>
-                                                <input type="tel" class="form-control" name="phone" placeholder="Phone" id="phone" />
+                                                <input type="tel" class="form-control" name="phone" placeholder="Phone"
+                                                    id="phone" />
                                             </div>
                                         </div>
                                     </div>
@@ -110,7 +163,8 @@
                                         <div class="col-lg-12">
                                             <div class="form-group">
                                                 <label for="phone">Description</label>
-                                                <textarea class="form-control" rows="5" name="description" placeholder="Description" id="description"></textarea>
+                                                <textarea class="form-control" rows="5" name="description"
+                                                    placeholder="Description" id="description"></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -124,7 +178,90 @@
                 </div>
             </div>
         </section>
+        <section id="modal-section" class="page-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <!-- Button trigger modal -->
+                        <!-- Change the data-target attribute to the id of the modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong">
+                            Launch demo modal
+                        </button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#exampleModalLong2">
+                            Launch another demo modal
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <div class="container" bis_skin_checked="1">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-muted">© 2022 Company, Inc</p>
+
+                <a href="/"
+                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                </ul>
+            </footer>
+        </div>
+        <!-- Footer -->
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Custom Script -->
     <script src="includes/js/script.js"></script>
 </body>
