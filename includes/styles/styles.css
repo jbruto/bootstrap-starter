@@ -40,3 +40,9 @@ img {
     /* padding-top: 50px;
     padding-bottom: 50px; */
 }
+
+#bg-section {
+    background: url('../images/sample-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
